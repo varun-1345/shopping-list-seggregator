@@ -1,0 +1,88 @@
+:root {
+  --fs-12: 1.2rem;
+}
+
+body {
+  font-family: system-ui;
+  background: #485551;
+}
+
+.input-area {
+  max-width: 470px;
+  margin-inline: auto;
+}
+
+.input-area h1 {
+  color: white;
+  text-align: center;
+  font-size: calc(var(--fs-12) * 2);
+}
+
+.input-area input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  font-size: calc(var(--fs-12) - 0.2);
+  border-radius: 8px;
+  border: 3px solid steelblue;
+}
+
+.input-area button[id="add-item"] {
+  width: 105%;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #bfea6a;
+  font-size: calc(var(--fs-12) - 0.2);
+  font-weight: bolder;
+}
+
+#sections-container {
+  margin-top: 20px;
+  width: 92%;
+  padding: 30px;
+  border: 1px solid #ccc;
+  background: #e5f8ca;
+}
+
+.section {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.items-list {
+  margin-left: 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 600px) {
+  .input-area {
+    max-width: 90%;
+  }
+
+  .input-area h1 {
+    font-size: calc(var(--fs-12) * 1.5);
+  }
+
+  .input-area input[type="text"] {
+    font-size: calc(var(--fs-12) - 0.4);
+  }
+
+  .input-area button[id="add-item"] {
+    font-size: calc(var(--fs-12) - 0.4);
+  }
+
+  #sections-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .section,
+  .items-list {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+}
